@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holiday Heartbeat - Contribute to the Greater Good</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Arial', sans-serif;
+        }
+        header {
+            background: url('https://images.unsplash.com/photo-1512445253042-dde54e1c68d3') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+            position: relative;
+        }
+        .overlay {
+            background-color: rgba(255, 0, 0, 0.6);
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: 1;
+        }
+        .hero-text {
+            position: relative;
+            z-index: 2;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .feature-card {
+            border: none;
+            border-radius: 10px;
+            transition: transform 0.3s;
+            background-color: #ffffff;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        .feature-card:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background: #a52a2a;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .login-container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        .gallery img {
+            width: 100%; 
+            border-radius: 10px;
+        }
+        .testimonial {
+            background-color: #856038;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        .festive-icon {
+            color: #ff4757;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="overlay"></div>
+        <div class="hero-text">
+            <h1>Holiday Heartbeat</h1>
+            <p>Contribute to the Greater Good This Christmas</p>
+            <a href="#what-it-does" class ="btn btn-light btn-lg">Get Involved</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="inspiration">
+            <h2 class="text-center">Inspiration</h2>
+            <p class="text-center">Join us in spreading joy and kindness. Together, we can make a difference in our communities this festive season.</p>
+        </section>
+
+        <section id="what-it-does" class="mt-5">
+            <h2 class="text-center">How You Can Contribute</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card feature-card mb-4">
+                        <div class="card-body text-center">
+                            <i class="fas fa-gift fa-3x festive-icon"></i>
+                            <h5 class="card-title">Donate Gifts</h5>
+                            <p class="card-text">Contribute new or gently used gifts for children and families in need.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-card mb-4">
+                        <div class="card-body text-center">
+                            <i class="fas fa-hands-helping fa-3x festive-icon"></i>
+                            <h5 class="card-title">Volunteer</h5>
+                            <p class="card-text">Join local events and help distribute gifts and meals to those in need.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-card mb-4">
+                        <div class="card-body text-center">
+                            <i class="fas fa-heart fa-3x festive-icon"></i>
+                            <h5 class="card-title">Support Charities</h5>
+                            <p class="card-text">Donate to local charities that make a difference during the holiday season.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="mt-5">
+            <h2 class="text-center">Gallery of Generosity</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="https://images.unsplash.com/photo-1573280561485-0b1bcf5f9a10" alt="Holiday Image 1" class="img-fluid">
+                </div>
+                <div class="col-md-4">
+                    <img src="https://images.unsplash.com/photo-1542291026-7b43878e84e6" alt="Holiday Image 2" class="img-fluid">
+                </div>
+                <div class="col-md-4">
+                    <img src="https://images.unsplash.com/photo-1574169208501-90e8e0e5b0e0" alt="Holiday Image 3" class="img-fluid">
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="mt-5">
+            <h2 class="text-center">What People Are Saying</h2>
+            <div class="testimonial">
+                <p>"This platform has made it so easy to give back during the holidays. I love being part of something bigger!"</p>
+                <p><strong>- Sarah T.</strong></p>
+            </div>
+            <div class="testimonial">
+                <p>"Volunteering with Holiday Heartbeat was the highlight of my Christmas last year. I can't wait to do it again!"</p>
+                <p><strong>- Mike L.</strong></p>
+            </div>
+        </section>
+
+        <div class="text-center mt-5">
+            <h2>User Login</h2>
+            <div class="login-container mx-auto">
+                <form id="login-form">
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" class="form-control" id="username" placeholder="Enter username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Login</button>
+                </form>
+                <p class="text-center mt-3"><a href="#">Forgot Password?</a></p>
+                <p class="text-center">Don't have an account? <a href="#">Sign up</a></p>
+            </div>
+        </div>
+    </div>
+
+ ```html
+    <footer>
+        <p>&copy; 2024 Holiday Heartbeat | Follow us on social media!</p>
+        <a href="#" class="text-light">Facebook</a> | 
+        <a href="#" class="text-light">Twitter</a> | 
+        <a href="#" class="text-light">Instagram</a>
+    </footer>
+
+    <script>
+        document.getElementById('login-form').addEventListener('submit', async (event) => {
+            event.preventDefault(); // Prevent the default form submission
+
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            const response = await fetch('http://localhost:5000/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ username, password }),
+            });
+
+            const result = await response.json();
+            if (response.ok) {
+                alert(result.message);
+                // You can redirect or perform other actions here
+            } else {
+                alert(result.message);
+            }
+        });
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
